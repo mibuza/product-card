@@ -5,7 +5,10 @@ body {
   line-height: 18px;
 }
 .container {
-  max-width: 1300px;
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .title {
   font-size: 70px;
