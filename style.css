@@ -35,6 +35,30 @@ body {
   margin: 22.5px;
   padding: 25px;
 }
+.card:hover {
+  transition: 0.1s;
+  box-shadow: 0px 4px 20px rgba(15, 39, 82, 0.26);
+  transform: translateY(-5px);
+}
+.rating {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.star {
+  color: #f5c518;
+}
+.grade { 
+  color: #0b9e17;
+}
+.trending {
+  border: 5px solid hwb(214 64% 28% / 0.445);
+  background-color: #e1eafc;
+}
 .card-img {
   width: 290px;
   height: 245px;
