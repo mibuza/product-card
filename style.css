@@ -3,6 +3,12 @@ body {
   color: #515076;
   font-size: 13px;
   line-height: 18px;
+  margin: 0;
+  background-image: url('images/photo-6.jpg');
+  background-size: 790px auto;
+  background-position: left top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 .container {
   max-width: 1500px;
@@ -16,6 +22,8 @@ body {
   line-height: 78px;
   margin: 0;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 .card {
   font-family: 'Montserrat', sans-serif;
