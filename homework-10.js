@@ -48,5 +48,9 @@ function checkNumber(number) {
     });
   }
 }
-const number = showHint();
+
+
+function renderCards(number) {
+  
+const number = getCardsCount();
 checkNumber(number);
