@@ -46,28 +46,3 @@ export const products = [
   },
 ];
 
-const productTemplate = document.getElementById("product-template");
-const productsContainer = document.getElementById("products-container");
-
-products.forEach((product) => {
-  const productClone = productTemplate.content.cloneNode(true);
-
-  productClone.querySelector(".card__product-name").textContent = product.name;
-  productClone.querySelector(".card__price-value").textContent =
-    `${product.price} ₽`;
-  productClone.querySelector(".card__description").textContent =
-    product.description;
-  productClone.querySelector(".card__purpose").textContent = product.purpose;
-  productClone.querySelector(".compound__item1").textContent =
-    product.compound[0];
-  productClone.querySelector(".compound__item2").textContent =
-    product.compound[1];
-  productClone.querySelector(".compound__item3").textContent =
-    product.compound[2];
-  // productClone.querySelector('.card__price-label').textContent = product.label
-  // productClone.querySelector('.card__img').src = 'images/' + product.img
-  // productClone.querySelector('.card__img').alt = product.name
-
-  productsContainer.appendChild(productClone);
-  console.log(productsContainer);
-});
