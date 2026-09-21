@@ -16,11 +16,11 @@ title.addEventListener("click", () => {
 
 // поменять цвет всех карточек
 
-buttonForCards.addEventListener("click", () => {
-  cards.forEach((card) => {
-    card.classList.toggle("active");
-  });
-});
+// buttonForCards.addEventListener("click", () => {
+//   cards.forEach((card) => {
+//     card.classList.toggle("active");
+//   });
+// });
 
 // поменять цвет первой карточки в синий цвет
 
@@ -31,34 +31,34 @@ const changeColorCardButton = document.querySelector(
   "#change-color-card-button",
 );
 
-changeColorCardButton.addEventListener("click", () => {
-  card.style.backgroundColor = blueColorCardHash;
-});
+// changeColorCardButton.addEventListener("click", () => {
+//   card.style.backgroundColor = blueColorCardHash;
+// });
 
 // открыть страницу Google
 
-const buttonOpenGoogle = document.querySelector("#button-open-google");
+// const buttonOpenGoogle = document.querySelector("#button-open-google");
 
-buttonOpenGoogle.addEventListener("click", openGoogle);
+// buttonOpenGoogle.addEventListener("click", openGoogle);
 
-function openGoogle() {
-  const shouldOpen = confirm("Вы хотите открыть страницу Google?");
-  if (shouldOpen === true) {
-    window.open("https://www.google.com");
-  } else {
-    return;
-  }
-}
+// function openGoogle() {
+//   const shouldOpen = confirm("Вы хотите открыть страницу Google?");
+//   if (shouldOpen === true) {
+//     window.open("https://www.google.com");
+//   } else {
+//     return;
+//   }
+// }
 
 // вывести сообщение в консоль
 
-const buttonOutputConsoleLog = document.querySelector(
-  "#button-output-console-log",
-);
+// const buttonOutputConsoleLog = document.querySelector(
+//   "#button-output-console-log",
+// );
 
-buttonOutputConsoleLog.addEventListener("click", () =>
-  outputConsoleLog("дз №6"),
-);
+// buttonOutputConsoleLog.addEventListener("click", () =>
+//   outputConsoleLog("дз №6"),
+// );
 
 function outputConsoleLog(message) {
   alert("Вывод сообщения в консоль: " + message);

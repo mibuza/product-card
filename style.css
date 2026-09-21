@@ -1,5 +1,6 @@
-body {
-  font-family: Montserrat, sans-serif;
+
+ body {
+  /* font-family: Montserrat, sans-serif; */
   color: #515076;
   font-size: 13px;
   line-height: 18px;
@@ -8,7 +9,7 @@ body {
   background-position: left top;
   background-attachment: fixed;
   background-repeat: no-repeat;;
-}
+} 
 .container {
   max-width: 1500px;
   display: flex;
@@ -26,13 +27,16 @@ body {
 }
 .card {
   font-family: 'Montserrat', sans-serif;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   width: 290px;
   height: 500px;
   background-color: #F7F7FA;
   margin: 22.5px;
   padding: 25px;
+}
+.card.hidden {
+  display: none !important;
 }
 .card.active {
   background-color: #d1d0df;
@@ -82,11 +86,16 @@ padding: 0;
   display: flex;
   justify-content: space-between;
 }
+.card__price-label {
+  font-weight: 700;
+  font-size: 20px;
+}
 .card__product-name {
   font-size: 20px;
   line-height: 20px;
   margin: 0;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  font-weight: 700;
 }
 .card__description {
   width: 287px;
@@ -105,5 +114,5 @@ padding: 0;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
