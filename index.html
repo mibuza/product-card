@@ -14,59 +14,100 @@
     <!-- <button id="button-for-cards"> изменить цвет всех карточек</button>
   <button id="button-open-google"> открыть страницу Google</button>
   <button id="button-output-console-log"> вывести сообщение в консоль</button> -->
+  <button class="button-registration" type="submit">Регистрация</button>
+  
+  
 
-    <h1 class="title">Выбери свой продукт</h1>
-    <ul class="product-list container" id="products-container">
-      <template id="product-template">
-        <li class="card">
-          <div class="card__text">
-            <img class="card__img" src="" alt="" />
-            <span class="card__purpose"></span>
-            <h2 class="card__product-name"></h2>
-            <p class="card__description"></p>
-            <span class="card__compound-text">Состав:</span>
-            <ul class="card__compound">
-              <li class="compound__item1"></li>
-              <li class="compound__item2"></li>
-              <li class="compound__item3"></li>
-            </ul>
-            <div class="card__price">
-              <span class="card__price-label">Цена</span>
-              <span class="card__price-value"></span>
-            </div>
+  <div class="overlay"></div>
+
+  <h1 class="title">Выбери свой продукт</h1>
+  <ul class="product-list container" id="products-container">
+    <template id="product-template">
+      <li class="card">
+        <div class="card__text">
+          <img class="card__img" src="" alt="" />
+          <span class="card__purpose"></span>
+          <h2 class="card__product-name"></h2>
+          <p class="card__description"></p>
+          <span class="card__compound-text">Состав:</span>
+          <ul class="card__compound">
+            <li class="compound__item1"></li>
+            <li class="compound__item2"></li>
+            <li class="compound__item3"></li>
+          </ul>
+          <div class="card__price">
+            <span class="card__price-label">Цена</span>
+            <span class="card__price-value"></span>
           </div>
-        </li>
-      </template>
+        </div>
+      </li>
+    </template>
+  </ul>
+  
+  <footer class="footer-block">
+    <div class="footer-block__container">
+      <div class="footer-block__description">
+        <h2>Product Cards</h2>
+        <p>У нас Самые Лучшие Продукты Для Кожи</p>
+        <div>
+        <a class="footer-block__social-link" href="#" aria-label="Telegram"><img src="images/telegram.png" alt=""  ></a>
+        <a class="footer-block__social-link" href="#" aria-label="ВКонтакте"><img src="images/vk.png" alt="" ></a>
+      </div>
+      </div>
+      <div class="footer-block__subscribe-container">
+        <h3>Подпишись на наши акции:</h3>
+          <form class="footer-block__email-container">
+            <label class="visually-hidden" for="email"></label>
+            <input class="footer-block__email" minlength="4" placeholder="Введи Email" name="email" type="email" required>
 
-      <!-- <li class="card card--trending">
-      <button id="change-color-card-button"> изменить цвет первой карточки</button>
-      <div class="card__text">
-        <img class="card__img" src="images/photo-1.jpg" alt="товар увложняющий мусс"/>
-        <span class="card__purpose">ДЛЯ НОРМАЛЬНОЙ КОЖИ</span>
-        <h2 class="card__product-name">Увлажняющий мусс</h2>
-        <p class="card__rating">
-          <span class="card__star">&starf;</span>
-          <span class="card__grade">4.9</span>
-        </p>
-        <p class="card__description">Глубоко увложняют кожу лица,остовляя её мягкой и гладкой.</p>
-        <span class="card__compound-text">Состав:</span>
-        <ul class="card__compound">
-          <li class="compound__item">активные натуральные комплексы</li>
-          <li class="compound__item">витамины C,A,PP,B И E</li>
-          <li class="compound__item">солнцезащитные компоненты</li>
-        </ul>
-        <div class="card__price">
-          <b>Цена</b>
-          <span class="card__price-value">2 750 ₽</span>
+            <button class="footer-block__button" type="submit">Подписаться</button>
+          </form>
+        </div>
+        <div class="footer-block__links">
+          <P>Быстрые ссылки</P>
+          <nav>
+            <ul>
+              <li><a href="#"></a>Главная</li>
+              <li><a href="#"></a>Магазин</li>
+              <li><a href="#"></a>Контакты</li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </li> -->
-    </ul>
+      <div class="website-footer" >
+      <a href="#">www.product-cards.com©all right reserve</a>
+      </div>
+    </footer>
+
+
+    <div class ="modal">
+    <button class="modal__button-cancel">x</button>
+
+    <form class="modal__container">
+      <h1 class="modal__title">Регистрация</h1>
+      <label class="visually-hidden" for="userName">Имя</label>
+      <input placeholder="Введи свое имя" name="userName" required>
+      <label class="visually-hidden" for="surName">Фамилия</label>
+      <input placeholder="Введи свою фамилию" name="surName" required>
+      <label class="visually-hidden" for="dateOfBirth">Дата рождения</label>
+      <input placeholder="Введи свою дату рождения" name="dateOfBirth" type="date" required>
+      <label class="visually-hidden" for="LogIn">Логин</label>
+      <input placeholder="Введи свой логин" name="LogIn" required>
+      <label class="visually-hidden" for="password">Пароль</label>
+      <input placeholder="Введи свой пароль" name="password" type="password" required>
+      <label class="visually-hidden" for="confirmPassword">Подтверждение пароля</label>
+      <input placeholder="Введи свой пароль повторно" name="confirmPassword" type="password" required>
+      <button class="modal__button-send" type="submit">отправить</button>
+    </form>
+    
+  </div>
+
     <script src="main.js" defer></script>
     <script src="homework-7.js" defer></script>
     <script src="homework-8.js" defer></script>
     <script src="homework-9.js" type="module"></script>
     <script src="homework-10.js" type="module"></script>
+    <script src="homework-11.js" type="module"></script>
     <script src="products.js" type="module"></script>
   </body>
 </html>

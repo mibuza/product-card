@@ -1,3 +1,4 @@
+
 import { products } from "./products.js";
 
 const productDescription = products.reduce((result, product) => {
