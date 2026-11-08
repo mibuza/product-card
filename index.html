@@ -14,7 +14,9 @@
     <!-- <button id="button-for-cards"> изменить цвет всех карточек</button>
   <button id="button-open-google"> открыть страницу Google</button>
   <button id="button-output-console-log"> вывести сообщение в консоль</button> -->
-    <button class="button-registration" type="submit">Регистрация</button>
+    <button id="button-registration" class="button-registration" type="submit">
+      Регистрация
+    </button>
 
     <div class="overlay"></div>
 
@@ -90,14 +92,16 @@
       </div>
     </footer>
 
-    <div class="modal">
-      <button class="modal__button-cancel">x</button>
+    <div id="registration-modal" class="modal">
+      <button id="button-cancel" class="modal__button-cancel">x</button>
 
-      <form class="modal__container">
+      <form id="registration-form" class="modal__container">
         <h1 class="modal__title">Регистрация</h1>
-        <label class="visually-hidden" for="userName">Имя</label>
+        <label class="visually-hidden" for="userName"> Имя </label>
+
         <input placeholder="Введи свое имя" name="userName" required />
-        <label class="visually-hidden" for="surName">Фамилия</label>
+
+        <label class="visually-hidden" for="surName"> Фамилия </label>
         <input placeholder="Введи свою фамилию" name="surName" required />
         <label class="visually-hidden" for="dateOfBirth">Дата рождения</label>
         <input
@@ -124,11 +128,7 @@
           type="password"
           required
         />
-        <button 
-        class="modal__button-send" 
-        type="submit"
-        >отправить
-      </button>
+        <button class="modal__button-send" type="submit">отправить</button>
       </form>
     </div>
 
@@ -137,7 +137,8 @@
     <script src="homework-8.js" defer></script>
     <script src="homework-9.js" type="module"></script>
     <script src="homework-10.js" type="module"></script>
-    <script src="homework-11.js" type="module"></script>
+    <!-- <script src="homework-11.js" type="module"></script> -->
+    <script src="main2.js" type="module"></script>
     <script src="products.js" type="module"></script>
   </body>
 </html>
