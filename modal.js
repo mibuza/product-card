@@ -20,4 +20,4 @@ export class Modal {
 
   isModalOpen() {
     return this.modal.classList.contains('modal-showed'); 
-}};
+}}; 
